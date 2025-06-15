@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ask.com Bot</title></head>
+<body>
+<h2>Ask.com Educational Bot</h2>
+<form method="post" enctype="multipart/form-data">
+  Proxies file: <input type="file" name="proxies"><br><br>
+  Keywords file: <input type="file" name="keywords"><br><br>
+  <input type="submit" value="Run Bot">
+</form>
+<p>{{ status }}</p>
+{% if status %}
+  <a href="/download">Download ad_results.csv</a>
+{% endif %}
+</body>
+</html>
